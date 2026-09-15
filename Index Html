@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Mobile optimization -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Halid The Tech Guy | Professional Websites for Businesses</title>
+  <meta name="description" content="Halid The Tech Guy builds modern, mobile-friendly websites for small businesses, brands and entrepreneurs. Professional websites starting from ₦10,000.">
+  <meta name="keywords" content="Halid The Tech Guy, website designer Nigeria, website design Lagos, website designer Ilorin, business website Nigeria, affordable website design">
+  <meta name="author" content="Halid The Tech Guy">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+
+  <!-- Canonical URL: CHANGE THIS AFTER PUBLISHING -->
+  <link rel="canonical" href="https://YOUR-GITHUB-USERNAME.github.io/halid-tech-guy/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Halid The Tech Guy | Professional Websites">
+  <meta property="og:description" content="Modern and affordable websites for businesses and entrepreneurs.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://YOUR-GITHUB-USERNAME.github.io/halid-tech-guy/">
+
+  <!-- Theme -->
+  <meta name="theme-color" content="#0a0a0a">
+
+  <!-- Favicon using emoji -->
+  <link rel="icon" href="data:image/svg+xml,
+  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+  <text y='.9em' font-size='90'>💻</text>
+  </svg>">
+
+  <!-- Google-friendly structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Halid The Tech Guy",
+    "description": "Professional website design services for businesses, brands and entrepreneurs.",
+    "url": "https://YOUR-GITHUB-USERNAME.github.io/halid-tech-guy/",
+    "telephone": "+2347071330416",
+    "priceRange": "₦10,000+",
+    "areaServed": {
+      "@type": "Country",
+      "name": "Nigeria"
+    },
+    "serviceType": [
+      "Website Design",
+      "Business Website Development",
+      "Landing Page Design",
+      "Website Redesign"
+    ]
+  }
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #080808;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    /* NAVIGATION */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(8, 8, 8, 0.95);
+      border-bottom: 1px solid #222;
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-inner {
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+
+    .logo span {
+      color: #00ff88;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      list-style: none;
+      font-size: 14px;
+    }
+
+    .nav-links a:hover {
+      color: #00ff88;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      background:
+        radial-gradient(circle at top right, rgba(0,255,136,.14), transparent 35%),
+        radial-gradient(circle at bottom left, rgba(0,150,255,.10), transparent 30%);
+    }
+
+    .hero-content {
+      max-width: 800px;
+      margin: auto;
+      padding: 80px 0;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 15px;
+      border: 1px solid #00ff88;
+      color: #00ff88;
+      border-radius: 50px;
+      font-size: 13px;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 9vw, 78px);
+      line-height: 1.05;
+      margin-bottom: 25px;
+    }
+
+    h1 span {
+      color: #00ff88;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      color: #bdbdbd;
+      font-size: 18px;
+    }
+
+    .buttons {
+      margin-top: 35px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      padding: 14px 23px;
+      border-radius: 8px;
+      font-weight: 700;
+      display: inline-block;
+      transition: .25s;
+    }
+
+    .btn-primary {
+      background: #00ff88;
+      color: #000;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(0,255,136,.2);
+    }
+
+    .btn-outline {
+      border: 1px solid #444;
+    }
+
+    .btn-outline:hover {
+      border-color: #00ff88;
+      color: #00ff88;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 90px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #999;
+    }
+
+    /* ABOUT */
+    .about {
+      background: #0d0d0d;
+    }
+
+    .about-box {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      color: #c7c7c7;
+      font-size: 17px;
+    }
+
+    /* SERVICES */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .service {
+      background: #111;
+      border: 1px solid #222;
+      padding: 30px;
+      border-radius: 14px;
+      transition: .25s;
+    }
+
+    .service:hover {
+      border-color: #00ff88;
+      transform: translateY(-4px);
+    }
+
+    .service-icon {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .service h3 {
+      margin-bottom: 8px;
+    }
+
+    .service p {
+      color: #999;
+      font-size: 14px;
+    }
+
+    /* PROCESS */
+    .process {
+      background: #0d0d0d;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .step {
+      text-align: center;
+      padding: 25px;
+    }
+
+    .number {
+      width: 50px;
+      height: 50px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 18px;
+      border-radius: 50%;
+      background: #00ff88;
+      color: #000;
+      font-weight: 800;
+    }
+
+    .step p {
+      color: #999;
+      font-size: 14px;
+    }
+
+    /* PORTFOLIO */
+    .portfolio-card {
+      max-width: 750px;
+      margin: auto;
+      background: #111;
+      border: 1px solid #222;
+      border-radius: 15px;
+      padding: 35px;
+      text-align: center;
+    }
+
+    .portfolio-card h3 {
+      color: #00ff88;
+      margin-bottom: 10px;
+    }
+
+    .portfolio-card p {
+      color: #aaa;
+    }
+
+    /* PRICE */
+    .price-box {
+      max-width: 500px;
+      margin: auto;
+      text-align: center;
+      background: linear-gradient(145deg, #111, #0b0b0b);
+      border: 1px solid #00ff88;
+      padding: 40px 25px;
+      border-radius: 18px;
+    }
+
+    .price-label {
+      color: #aaa;
+    }
+
+    .price {
+      font-size: 48px;
+      font-weight: 800;
+      margin: 10px 0;
+    }
+
+    .price span {
+      font-size: 18px;
+      color: #aaa;
+    }
+
+    .price-box ul {
+      list-style: none;
+      margin: 25px 0;
+      color: #ccc;
+    }
+
+    .price-box li {
+      margin: 9px 0;
+    }
+
+    /* CTA */
+    .cta {
+      text-align: center;
+      background: #00ff88;
+      color: #000;
+    }
+
+    .cta h2 {
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
+
+    .cta p {
+      margin-bottom: 25px;
+    }
+
+    .whatsapp {
+      background: #000;
+      color: #fff;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 35px 0;
+      text-align: center;
+      color: #777;
+      font-size: 14px;
+      background: #050505;
+    }
+
+    footer strong {
+      color: #00ff88;
+    }
+
+    /* FLOATING WHATSAPP */
+    .floating-whatsapp {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: #25D366;
+      color: white;
+      display: grid;
+      place-items: center;
+      font-size: 27px;
+      z-index: 2000;
+      box-shadow: 0 5px 25px rgba(0,0,0,.4);
+    }
+
+    .floating-whatsapp:hover {
+      transform: scale(1.08);
+    }
+
+    /* MOBILE */
+    @media (max-width: 700px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        min-height: 85vh;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .services-grid,
+      .steps {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 70px 0;
+      }
+
+      .cta h2 {
+        font-size: 31px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="container nav-inner">
+      <a href="#home" class="logo">HALID <span>TECH</span></a>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-content">
+
+        <div class="badge">AVAILABLE FOR NEW PROJECTS</div>
+
+        <h1>
+          Halid <span>The Tech Guy</span>
+        </h1>
+
+        <p>
+          I build modern, mobile-friendly websites that help businesses,
+          brands and entrepreneurs look professional online and attract more customers.
+        </p>
+
+        <div class="buttons">
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/2347071330416?text=Hello%20Halid%20The%20Tech%20Guy%2C%20I%20need%20a%20website."
+            target="_blank"
+            rel="noopener"
+          >
+            💬 Chat on WhatsApp
+          </a>
+
+          <a class="btn btn-outline" href="#services">
+            View Services
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About Me</h2>
+          <p>Technology. Design. Business.</p>
+        </div>
+
+        <div class="about-box">
+          <p>
+            I'm Halid, also known as <strong>Halid The Tech Guy</strong>.
+            I create clean and professional websites for businesses and
+            individuals who want a stronger presence online.
+          </p>
+
+          <br>
+
+          <p>
+            Whether you're a fashion designer, food business, barber,
+            photographer, entrepreneur or growing brand, I can create a
+            website that makes it easier for customers to discover and
+            contact you.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>What I Do</h2>
+          <p>Simple digital solutions for growing businesses.</p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service">
+            <div class="service-icon">💻</div>
+            <h3>Business Websites</h3>
+            <p>
+              Professional websites that showcase your business,
+              services and contact information.
+            </p>
+          </article>
+
+          <article class="service">
+            <div class="service-icon">📱</div>
+            <h3>Mobile-Friendly Design</h3>
+            <p>
+              Websites designed to look great on smartphones,
+              tablets and computers.
+            </p>
+          </article>
+
+          <article class="service">
+            <div class="service-icon">🚀</div>
+            <h3>Landing Pages</h3>
+            <p>
+              Focused pages designed to introduce your business
+              and turn visitors into potential customers.
+            </p>
+          </article>
+
+          <article class="service">
+            <div class="service-icon">🔧</div>
+            <h3>Website Redesign</h3>
+            <p>
+              Upgrade an old or basic website into a cleaner,
+              more modern experience.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>How It Works</h2>
+          <p>Getting your website online is simple.</p>
+        </div>
+
+        <div class="steps">
+
+          <div class="step">
+            <div class="number">1</div>
+            <h3>Tell Me</h3>
+            <p>
+              Tell me about your business, services and the
+              kind of website you want.
+            </p>
+          </div>
+
+          <div class="step">
+            <div class="number">2</div>
+            <h3>I Build</h3>
+            <p>
+              I design and build a professional website
+              around your brand.
+            </p>
+          </div>
+
+          <div class="step">
+            <div class="number">3</div>
+            <h3>Go Live</h3>
+            <p>
+              Your website is published online so customers
+              can access it from their phones or computers.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>My Work</h2>
+          <p>Websites built with attention to design and usability.</p>
+        </div>
+
+        <div class="portfolio-card">
+          <h3>Custom Business Websites</h3>
+
+          <p>
+            I create websites for fashion brands, food businesses,
+            entrepreneurs, local businesses and other growing brands.
+          </p>
+
+          <br>
+
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/2347071330416?text=Hello%20Halid%2C%20I%20would%20like%20to%20see%20your%20previous%20website%20work."
+            target="_blank"
+            rel="noopener"
+          >
+            See My Work
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PRICE -->
+    <section>
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Simple Pricing</h2>
+          <p>Start your online presence without breaking the bank.</p>
+        </div>
+
+        <div class="price-box">
+
+          <div class="price-label">STARTER WEBSITE</div>
+
+          <div class="price">
+            ₦10,000 <span>+</span>
+          </div>
+
+          <ul>
+            <li>✓ One-page professional website</li>
+            <li>✓ Mobile-friendly design</li>
+            <li>✓ Business information</li>
+            <li>✓ WhatsApp contact button</li>
+            <li>✓ Contact/CTA section</li>
+            <li>✓ Basic SEO setup</li>
+          </ul>
+
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/2347071330416?text=Hello%20Halid%20The%20Tech%20Guy%2C%20I%27m%20interested%20in%20the%20%E2%82%A610%2C000%20starter%20website."
+            target="_blank"
+            rel="noopener"
+          >
+            Get Started
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="contact">
+      <div class="container">
+
+        <h2>Ready to Take Your Business Online?</h2>
+
+        <p>
+          Let's build a website that makes your business look professional.
+        </p>
+
+        <a
+          class="btn whatsapp"
+          href="https://wa.me/2347071330416?text=Hello%20Halid%20The%20Tech%20Guy%2C%20I%20want%20to%20build%20a%20website."
+          target="_blank"
+          rel="noopener"
+        >
+          💬 WhatsApp Me
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>
+        © <span id="year"></span>
+        <strong>Halid The Tech Guy</strong>.
+        All Rights Reserved.
+      </p>
+
+      <p>Professional Websites for Growing Businesses.</p>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a
+    class="floating-whatsapp"
+    href="https://wa.me/2347071330416?text=Hello%20Halid%20The%20Tech%20Guy%2C%20I%20need%20a%20website."
+    target="_blank"
+    rel="noopener"
+    aria-label="Chat with Halid The Tech Guy on WhatsApp"
+    title="Chat on WhatsApp"
+  >
+    💬
+  </a>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
